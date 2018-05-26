@@ -22,3 +22,9 @@
 * {
 	font-family: "LeagueSpartan"
 }
+
+.btn-top {
+	color: white;
+	border-radius: 7px;
+	background-color: #555555;
+}

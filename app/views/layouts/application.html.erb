@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SEXed</title>
+  <title>Ligare</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -12,8 +12,12 @@
 </head>
 <body>
 <div class="container-fluid">
-<div class="">
-	
+<div class="row">
+	<div class="col-12 mt-3">
+		<%= button_to "Teach a class", nil, { class: "float-right btn-top px-2 pt-1 mr-3" } %>
+		<%= button_to "Pitch a class", nil, { class: "float-right btn-top px-2 pt-1 mr-3" } %>
+	</div>
+	</div>
 </div>
 <%= yield %>
 </div>
