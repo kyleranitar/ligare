@@ -14,8 +14,10 @@
 <div class="container-fluid">
 <div class="row">
 	<div class="col-12 mt-3">
-		<%= button_to "Teach a class", nil, { class: "float-right btn-top px-2 pt-1 mr-3" } %>
-		<%= button_to "Pitch a class", nil, { class: "float-right btn-top px-2 pt-1 mr-3" } %>
+		<h4 class="float-left mx-2">Ligare</h4>
+		<%= link_to "Search Classes", root_url, { class: "float-left btn-top px-2 pt-1 mr-3" } unless current_page?(root_path) %>
+		<%= link_to "Teach a class", nil, { class: "float-right btn-top px-2 pt-1 mr-3" } %>
+		<%= link_to "Pitch a class", nil, { class: "float-right btn-top px-2 pt-1 mr-3" } %>
 	</div>
 	</div>
 </div>

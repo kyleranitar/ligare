@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'category/new' => 'category#new'
-  post 'category/new' => 'category#create'
+
+  resources :topics
+  resources :categories
 
   root to: 'search#index'
 

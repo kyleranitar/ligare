@@ -23,7 +23,7 @@
 	font-family: "LeagueSpartan"
 }
 
-.btn-top {
+.btn-top, .btn-top:hover {
 	color: white;
 	border-radius: 7px;
 	background-color: #555555;
