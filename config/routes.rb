@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
+  get 'category/new' => 'category#new'
+  post 'category/new' => 'category#create'
+
   root to: 'search#index'
-
-  get 'search/index'
-
-  get 'search_controller/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url(LeagueSpartan-Bold.otf) format("truetype");
+}
+
+* {
+	font-family: "LeagueSpartan"
+}

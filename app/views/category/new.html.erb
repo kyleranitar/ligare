@@ -1,0 +1,10 @@
+<div class="container">
+	<h1 class="text-center m-5">Add A New Category</h1>
+	<%= form_for :category,
+		url: { action: "create" },
+		html: { class: "mx-auto d-block text-center", multipart: true }  do |f| %>
+	  <%= f.file_field :image %>
+	  <%= f.text_field :name %>
+	  <%= f.submit "Create" %>
+	<% end %>
+</div>
