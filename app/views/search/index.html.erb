@@ -11,12 +11,14 @@
 
 	<div class="row mt-5">
 		<% @categories.each do |category| %>
-			<div class="col-md-4">
-			  <div class="row m-2 my-4" >
-			    <div class="col-3 mx-auto d-block"><%= image_tag category.image.url, height: 100, width: 100 %></div>
-			    <h4 class="col-9 my-auto text-center"><%= category&.name&.upcase %></h4>
-			  </div>
-			</div>
+			<a class="w-100" href="<%= category_path(category) %>" style="text-decoration: none">
+				<div class="col-md-4">
+				  <div class="row m-2 my-4" >
+				    <div class="col-3 mx-auto d-block"><%= image_tag category.image.url, height: 100, width: 100 %></div>
+				    <h4 class="col-9 my-auto text-center"><%= category&.name&.upcase %></h4>
+				  </div>
+				</div>
+			</a>
 		<% end %>
 		<h5 class="text-center w-100">
 			<%= "No Results Found." if @categories.empty? %>
